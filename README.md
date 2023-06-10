@@ -1,2 +1,2 @@
-# DCHUN_Python_2023JUNE
-전다윗 프로젝트
+# DAWIT CHUN SUMMER BREAK 23
+## 전다윗 프로젝트

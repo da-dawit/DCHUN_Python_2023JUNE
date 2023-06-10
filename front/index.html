@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+<html lang="ko">
+  <body>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+      <div style="color: red;">HELLO</div>
+      
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    function SetFormDefaults() {}
+
+    var labels = ["January", "February", "March", "April", "May", "June"];
+    var data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "My First dataset",
+          backgroundColor: "rgb(255, 99, 132)",
+          borderColor: "rgb(255, 99, 132)",
+          data: [0, 10, 5, 2, 20, 30, 45],
+        },
+      ],
+    };
+
+    const config = {
+      type: "line",
+      data: data,
+      options: {},
+    };
+
+    var myChart = new Chart(document.getElementById("myChart"), config);
+
+    function submit() {
+      fetch("http://127.0.0.1:5000/")
+        .then((response) => response.json())
+        .then((data) => {
+          config.data = data;
+          myChart.update();
+        });
+    }
+
+    const form = document.getElementById("form");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      let formData = new FormData();
+
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      formData.append("username", username);
+      formData.append("password", password);
+
+      fetch("http://localhost:5000/test", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+    });
+  </script>
+  <style></style>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEBSITE</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>This is my first website.</p>
+             <strong>!!!</strong> ??? </em>
+        </p>
+    </body>
+    <style>
+        h1 {
+            color: #0000FF;
+            font-size: large;
+        }
+    </style>
+</html>
